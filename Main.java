@@ -9,6 +9,7 @@ public class Main{
 
         System.out.println("OPERATORS");
         System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
         int choice = scan.nextInt();
 
         System.out.print("Enter First Number: ");
@@ -18,12 +19,16 @@ public class Main{
 
         switch (choice){
             case 1 -> result = addition(num1, num2);
+            case 2 -> result = subtraction(num1, num2);
         }
 
         scan.close();
     }
     public static int addition(int num1, int num2){
         return num1 + num2;
+    }
+    public static int subtraction(int num1, int num2){
+        return num1 - num2;
     }
 
 }
